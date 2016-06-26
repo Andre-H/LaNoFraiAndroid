@@ -1,0 +1,76 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/compassContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FFFFFF">
+
+
+    <LinearLayout
+        android:id="@+id/linear_topbar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:background="#777777">
+
+        <Button
+            android:id="@+id/cadelefrai_vorta_bt"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text="@string/cadelefrai_vorta" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/linear_hand_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/linear_topbar_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/cadelefrai_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="#666666"
+            android:text="@string/cadelefrai_headline" />
+
+	<ImageView
+	    android:id="@+id/compass_hand"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+	    android:layout_centerHorizontal="true"
+	    android:src="@drawable/compass_hand" />
+
+	<TextView
+	    android:id="@+id/lonjura_txt"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/compass_hand"
+	    android:layout_below="@+id/compass_hand"
+	    android:layout_marginTop="18dp"
+	    android:text="@string/cadelefrai_lonjura"
+	    android:textColor="#666666"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_horizontal" />
+
+	
+    </RelativeLayout>
+
+</LinearLayout>

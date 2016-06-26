@@ -11,10 +11,6 @@
 # Java class files
 *.class
 
-# Generated files
-bin/
-gen/
-
 # Gradle files
 .gradle/
 build/
@@ -33,3 +29,21 @@ proguard/
 
 ### Android Patch ###
 gen-external-apklibs
+
+# Generated files
+bin/
+gen/
+out/
+
+# Windows thumbnail db
+Thumbs.db
+
+# Android Studio captures folder
+captures/
+
+# Intellij
+*.iml
+.idea/workspace.xml
+
+# Keystore files
+*.jks
